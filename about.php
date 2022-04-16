@@ -1,3 +1,10 @@
+<?php
+
+session_start();
+include ("./cpanel/link.php"); 
+
+?>
+
 <!doctype html>
 <html class="no-js" lang="zxx">
 
@@ -12,7 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Place favicon.png in the root directory -->
-<?php include("files.php"); ?>
+<?php include("./files.php"); ?>
 </head>
 
 <body>
@@ -26,12 +33,12 @@
 <div class="body-wrapper">
 
     <!-- HEADER AREA START (header-5) -->
-<?php include("navs.php"); ?>
+<?php include("./navs.php"); ?>
     <!-- HEADER AREA END -->
 
 
     <!-- Utilize Mobile Menu Start -->
- <?php include ("navmobile.php");?>
+ <?php include ("./navmobile.php");?>
   <!-- BREADCRUMB AREA END -->
 
     <div class="ltn__breadcrumb-area text-left bg-overlay-white-30 bg-image "  data-bs-bg="img/bg/14.jpg">

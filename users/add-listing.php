@@ -234,13 +234,13 @@ $_SESSION['US_ln'];
 
                     <div class="col-md-3">
                       <div class="form-group">
-                        <label>Property dimension (Sqm) * </label>
+                        <label>Property dimension (Sqm)</label>
                         <input type="text" class="form-control" name="psize" id="psize" placeholder="E.g. 123 X 134">
                       </div>
                     </div>
                     <div class="col-md-3">
                       <div class="form-group">
-                        <label>Parking space * </label>
+                        <label>Parking space</label>
                         <select type="text" class="form-control" name="pspace" id="pspace">
                           <option value="" selected="Selected">Select </option>
                           <option value="1">Yes </option>
@@ -292,7 +292,7 @@ $_SESSION['US_ln'];
 
                     <div class="col-md-4">
                       <div class="form-group">
-                        <label>Furnishing * </label>
+                        <label>Furnishing </label>
                         <select name="furnishing" class="nice-select form-control" id="furnishing">
                           <option Value="" selected="selected">Select</option>
                           <option value="1">Semi Furnishing</option>
@@ -309,7 +309,7 @@ $_SESSION['US_ln'];
                   <div class="row">
                     <div class="col-md-4">
                       <div class="form-group">
-                        <label>Bedrooms * </label>
+                        <label>Bedrooms</label>
                         <input type="text" class="form-control" name="broom" id="broom" placeholder="1 - 200 ">
 
                       </div>
@@ -319,7 +319,7 @@ $_SESSION['US_ln'];
 
                       <!-- /.form-group -->
                       <div class="form-group">
-                        <label>Bathrooms * </label>
+                        <label>Bathrooms</label>
                         <input type="text" class="form-control" name="batroom" id="batroom" placeholder="1 - 200 ">
                       </div>
 
@@ -327,7 +327,7 @@ $_SESSION['US_ln'];
 
                     <div class="col-md-4">
                       <div class="form-group">
-                        <label>Toilets * </label>
+                        <label>Toilets</label>
                         <input type="text" class="form-control" name="toilet" id="toilet" placeholder="1 - 200 ">
                       </div>
 
@@ -345,7 +345,17 @@ $_SESSION['US_ln'];
                         </div>
 
                         <input type="number" class="form-control" name="price" id="price" placeholder="Price in figure">
-
+                      </div>
+                    </div>
+                    <div class=" col-md-4">
+                      <label>Time period:</label>
+                      <div class="input-item  input-item-name ">
+                        <select name="tperiod" class="nice-select form-control" id="tperiod">
+                          <option Value="" selected="selected">Select</option>
+                          <option value="monthly">Monthly</option>
+                          <option value="annually">Annually</option>
+                          <option value="one off">One Off</option>
+                        </select>
                       </div>
                     </div>
 
@@ -358,6 +368,52 @@ $_SESSION['US_ln'];
                           <option value="1">Negotiable </option>
                           <option value="2"> Non Negotiable</option>
                         </select>
+                      </div>
+
+                    </div>
+                  </div>
+                  <h5 class="mb-4 mt-4">Others</h5>
+
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Pet </label>
+                        <select type="text" class="form-control" name="pet" id="pet">
+                          <option value="" selected="Selected">Select </option>
+                          <option value="1">Yes </option>
+                          <option value="2"> No</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+
+                      <div class="form-group">
+                        <label>Smoking </label>
+                        <select type="text" class="form-control" name="smoking" id="smoking">
+                          <option value="" selected="Selected">Select </option>
+                          <option value="1">Allowed </option>
+                          <option value="2"> Not Allowed</option>
+                        </select>
+                      </div>
+
+                    </div>
+                    <div class="col-md-4">
+
+                      <div class="form-group">
+                        <label>Party </label>
+                        <select type="text" class="form-control" name="smoking" id="smoking">
+                          <option value="" selected="Selected">Select </option>
+                          <option value="1">Allowed </option>
+                          <option value="2"> Not Allowed</option>
+                        </select>
+                      </div>
+
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Population </label>
+                        <input type="text" class="form-control" name="toilet" id="toilet" placeholder="1 - 100 ">
                       </div>
 
                     </div>
@@ -499,15 +555,57 @@ $_SESSION['US_ln'];
                     </div>
                     <div class="col-md-2">
                       <div class="form-group">
-                        <label> Wi-fi</label> <br>
-                        <input type="checkbox" name="wifi" id="wifi" value="yes">
+                        <label> Kitchen Shelf </label> <br>
+                        <input type="checkbox" name="kitchenshelf" id="kitchenshelf" value="yes">
 
                       </div>
                     </div>
                     <div class="col-md-2">
                       <div class="form-group">
-                        <label> Kitchen Shelf </label> <br>
-                        <input type="checkbox" name="kitchenshelf" id="kitchenshelf" value="yes">
+                        <label> Internet </label> <br>
+                        <input type="checkbox" name="internet" id="internet" value="yes">
+
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="form-group">
+                        <label> Changing room </label> <br>
+                        <input type="checkbox" name="changingroom" id="changingroom" value="yes">
+
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="form-group">
+                        <label> Table </label> <br>
+                        <input type="checkbox" name="table" id="table" value="yes">
+
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="form-group">
+                        <label> Chair </label> <br>
+                        <input type="checkbox" name="chair" id="chair" value="yes">
+
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="form-group">
+                        <label> Projector </label> <br>
+                        <input type="checkbox" name="projector" id="projector" value="yes">
+
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="form-group">
+                        <label> Power Generator </label> <br>
+                        <input type="checkbox" name="powergenerator" id="powergenerator" value="yes">
+
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="form-group">
+                        <label> Sectional </label> <br>
+                        <input type="checkbox" name="sectional" id="sectional" value="yes">
 
                       </div>
                     </div>
@@ -537,39 +635,39 @@ $_SESSION['US_ln'];
 
               </form>
 
-            <!-- </div>
+              <!-- </div>
             <div class="card-footer fw-bold"> Product listing </div>
           </div> -->
 
-          <div class="card card-default" id="imagesload" style="display: none; min-height: 350px;">
-            <div class="card-header"> Upload images</div>
+              <div class="card card-default" id="imagesload" style="display: none; min-height: 350px;">
+                <div class="card-header"> Upload images</div>
 
-            <div class="card-body">
-              <p>an Ad should have minimum of 5 images.
-              </p>
-              <form method='post' id="myformdata" action='' onSubmit="return false;">
-                <div class="row">
+                <div class="card-body">
+                  <p>an Ad should have minimum of 5 images.
+                  </p>
+                  <form method='post' id="myformdata" action='' onSubmit="return false;">
+                    <div class="row">
 
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <p>
-                        <input type="file" name="myfiles[]" id="myfiles" multiple>
-                      </p>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <p>
+                            <input type="file" name="myfiles[]" id="myfiles" multiple>
+                          </p>
+                        </div>
+                        <p id="wke"> </p>
+
+                        <div class="form-group">
+                          <br>
+                          <input type="submit" onClick="Doneall()" id="btnsave" class="btn btn-primary" value="Done">
+                        </div>
+                      </div>
+
                     </div>
-                    <p id="wke"> </p>
-
-                    <div class="form-group">
-                      <br>
-                      <input type="submit" onClick="Doneall()" id="btnsave" class="btn btn-primary" value="Done">
-                    </div>
-                  </div>
-
+                  </form>
                 </div>
-              </form>
-            </div>
-          </div>
+              </div>
 
-        </div>
+            </div>
       </section>
 
     </div>
@@ -681,7 +779,7 @@ $_SESSION['US_ln'];
       var purpose = document.getElementById("purpose").value
       var agent = document.getElementById("agency");
       var commission = document.getElementById("commission");
-      
+
       if (purpose == "1") {
         document.getElementById("agent").style.display = 'block'
         agent.style.display = 'block';
@@ -704,16 +802,18 @@ $_SESSION['US_ln'];
     function Hide() {
 
       var cate = $('#category').val();
-      var catedesc = $('#description').val();
+      var description = $('#description').val();
       var price = $('#price').val();
-      var size = $('#psize').val();
       var address = $('#address').val();
       var country = $('#country').val();
       var state = $('#state').val();
+      var condition = $('#condition').val();
+      var purpose = $('#purpose').val();
+      var negotiate = $('#negotiate').val();
 
 
 
-      if (cate != "" && catedesc != "" && price != "" && address != "" && size != "") {
+      if (cate != "" && description != "" && price != "" && address != "" && condition != "" && purpose != "" && negotiate != "") {
 
         document.getElementById("part1").style.display = 'none';
         document.getElementById("part2").style.display = 'block';
@@ -790,7 +890,7 @@ $_SESSION['US_ln'];
     }
 
     function Doneall() {
-      location.href = "/novaz";
+      location.href = "../";
     }
   </script>
 </body>
