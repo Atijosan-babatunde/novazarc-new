@@ -86,7 +86,9 @@
                                 <div class="car-dealer-form-inner">
                                     <form method="post" class="ltn__car-dealer-form-box row" onSubmit="return false" >
                                         <div class="ltn__car-dealer-form-item ltn__custom-icon---- ltn__icon-meter---- col-lg-3 col-md-6">
-                                            <input type="text" id="area" name="area" class="form-control"  placeholder="Property location" style="font-size: 16px; font-weight: 520; ">
+                                            <input class="nice-select" id="area" name="area" placeholder="Property Location" type="text"
+                                               style="font-size: 16px;     color:black; font-weight: 500; font-family: var(--ltn__heading-font); line-height: 58px" 
+                                            >
                                          </div> 
 										 
 										 

@@ -236,7 +236,7 @@ $uids = $rows['uid'];
     
 
     <div class="ltn__img-slider-area mb-90">
-        <div class="container-fluid">
+        <div class="container">
 							<?php
 								$imgs = mysqli_query($link, "SELECT * FROM images WHERE transid ='$transid' ");
 								$rimg = mysqli_num_rows($imgs); 
@@ -253,7 +253,7 @@ $uids = $rows['uid'];
                 <div class="col-lg-12">
                     <div class="ltn__img-slide-item-4">
                         <a href="uploads/<?php echo $rmgs['imagename'];?>" alt="Image"  data-rel="lightcase:myCollection">
-                            <img src="uploads/<?php echo $rmgs['imagename'];?>" alt="Image" width="1904" height="450" >
+                            <img src="uploads/<?php echo $rmgs['imagename'];?>" alt="Image" width="600" height="300" >
                         </a>
                     </div>
                 </div>

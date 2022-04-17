@@ -860,7 +860,7 @@ input[type="password"],
 input[type="submit"],
 textarea {
   background-color: var(--white);
-  border: 2px solid;
+ 
   border-color: var(--border-color-9);
   height: 65px;
   -webkit-box-shadow: none;
@@ -868,6 +868,7 @@ textarea {
   padding-left: 20px;
   font-size: 16px;
   color: var(--ltn__paragraph-color);
+  
   width: 100%;
   margin-bottom: 30px;
   border-radius: 0;
@@ -879,14 +880,18 @@ input[type="password"]::-webkit-input-placeholder,
 input[type="submit"]::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: var(--ltn__paragraph-color);
-  font-size: 14px; }
+  color:#000000 !important;
+  font-size: 16px; }
+
+  /* font-size: 16px;
+    font-weight: 500;
+    font-family: var(--ltn__heading-font); */
 
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus,
 textarea:focus {
-  border-color: #dbae5f; }
+  border-color: #000; }
 
 input[type="password"] {
   letter-spacing: 3px;
@@ -3461,7 +3466,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   font-weight: 600;
   font-size: 14px; }
 
-.ltn__search-widget input[type="text"]::-webkit-input-placeholder {
+.ltn__search-widget input[type="text"]{
   color: var(--ltn__primary-color);
   font-size: 12px; }
 
@@ -12762,6 +12767,9 @@ input.cart-plus-minus-box {
   font-weight: 500;
   font-family: var(--ltn__heading-font);
   width: 100%; }
+
+ 
+
   .ltn__car-dealer-form-box .nice-select .list {
     width: 100%;
     z-index: 99;
