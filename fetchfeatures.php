@@ -45,10 +45,9 @@
 							<ul>
 								<?php
 								if ($rowb['promotion'] == 'active') {
-									?>
+								?>
 									<li class="sale-badge bg-danger">Promoted</li>
-								<?php }
-								elseif ($rowb['status'] == 1) {
+								<?php } elseif ($rowb['status'] == 1) {
 								?>
 									<li class="sale-badge bg-green">Available</li>
 								<?php

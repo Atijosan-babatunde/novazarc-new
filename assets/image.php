@@ -41,7 +41,7 @@ if (!$sock = @fsockopen('www.google.com', 80, $num, $error, 5))
 			foreach($_FILES['myfiles']['name'] as $key=>$val){
 				$filename = basename($_FILES['myfiles']['name'][$key]);
 				$targetFile = $targetDir.$filename;
-				if(move_uploaded_file($_FILES["myfiles"]["tmp_name"][$key], $targetFile)){
+                if(move_uploaded_file($_FILES["myfiles"]["tmp_name"][$key], $targetFile)){
 					// $success[] = "Uploaded $filename";
 					// $insertQrySplit[] = "('$filename')";
 					if($ftr)

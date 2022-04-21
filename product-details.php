@@ -1,7 +1,10 @@
-<?php include ("cpanel/link.php");?>
+<?php
+session_start();
+include ("cpanel/link.php");
+?>
+
 
 <?php 
-session_start();
 
  $pid = $_GET['pid'];
 
@@ -33,7 +36,7 @@ session_start();
 
 
     <!-- Place favicon.png in the root directory -->
-<?php include ("files.php");?>
+<?php include ("./files.php");?>
 </head>
 
 <body onload="searchdata()">
@@ -42,11 +45,11 @@ session_start();
 <div class="body-wrapper">
 
     <!-- HEADER AREA START (header-5) -->
-<?php include ("navs.php");?>
+<?php include ("./navs.php");?>
     <!-- HEADER AREA END -->
 
     <!-- Utilize Cart Menu Start -->
-<?php include ("navmobile.php");?>
+<?php include ("./navmobile.php");?>
     <!-- Utilize Mobile Menu End -->
 
     <div class="ltn__utilize-overlay"></div>
