@@ -863,7 +863,7 @@ textarea {
   background-color: var(--white);
  
   border-color: var(--border-color-9);
-  height: 65px;
+  height: 60px;
   -webkit-box-shadow: none;
   box-shadow: none;
   padding-left: 20px;

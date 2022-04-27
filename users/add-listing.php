@@ -158,12 +158,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
   <div class="card">
     <div class="card-header" id="headingTwo">
       <h5 class="mb-0">
-        <button class="btn btn-to collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <button class="btn btn-to collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
           Property Status
         </button>
       </h5>
     </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+    <div id="collapseFour" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
       <div class="card-body">
          Is your apartment furnished? What is the condition of your apartment? Specify whether the place is newly 
       built or had previously been occupied so buyers could see the full picture.
@@ -173,12 +173,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
   <div class="card">
     <div class="card-header" id="headingTwo">
       <h5 class="mb-0">
-        <button class="btn btn-to collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <button class="btn btn-to collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
           Interior Facilities
         </button>
       </h5>
     </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+    <div id="collapseFive" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
       <div class="card-body">
         Select how many bathrooms, Toilets and Bedrooms. Be specific enough to convince the customer.
       </div>
@@ -187,12 +187,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
   <div class="card">
     <div class="card-header" id="headingTwo">
       <h5 class="mb-0">
-        <button class="btn btn-to collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <button class="btn btn-to collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
           Pricing & Negotiation
         </button>
       </h5>
     </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+    <div id="collapseSix" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
       <div class="card-body">
       What's the cost? Specify your last price or click on 'Negotiable' to let buyers know that you're ready to bargain.
       </div>
@@ -773,10 +773,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
           </div> -->
 
               <div class="card card-default" id="imagesload" style="display: none; min-height: 350px;">
-                <div class="card-header"> Upload images</div>
+                <div class="card-header" style="font-size:1.1rem"> UPLOAD IMAGES</div>
 
                 <div class="card-body">
-                  <p>an Ad should have minimum of 5 images.
+                  <p>Please upload atleast five images to continue. 
                   </p>
                   <form method='post' id="myformdata" action='' onSubmit="return false;">
                     <div class="row">
@@ -789,10 +789,41 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
                         </div>
                         <p id="wke"> </p>
 
+                        <!-- <div class="form-group">
+                          <br>
+                          <input type="submit" onClick="Doneall()" id="btnsave" class="btn px-5 py-2 ft-2 fs-12 fw-600" style="background-color: #dbae5f; color: var(--white);" value="Done">
+                        </div> -->
+
                         <div class="form-group">
                           <br>
-                          <input type="submit" onClick="Doneall()" id="btnsave" class="btn btn-primary" value="Done">
+                        <button type="button" class="btn px-5 py-2 ft-2 fs-12 fw-600" style="background-color: #dbae5f; color: var(--white)" data-toggle="modal" data-target="#myModal2">Done</button>
                         </div>
+
+                        <div id="myModal2" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+      <h4 class="modal-title">Promotion</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        
+      </div>
+      <div class="modal-body justify-content-center text-center">
+        <p>Get your advert on the top of the page so it doesn't get lost behind thousands of others! Choose any of our category 
+          and get it promoted on our Home page. 
+          
+          <p class="mt-5 ">Promote ADS by clicking Continue.</p>
+        </p>
+      </div>
+      <div class="modal-footer d-flex">
+        <input type="submit" onClick="Doneall()" id="btnsave" class="btn px-5 py-2 ft-2 fs-12 fw-600" style="background-color: #dbae5f; color: var(--white);" value="Not interested">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Continue</button>
+      </div>
+    </div>
+
+  </div>
+</div>
                       </div>
 
                     </div>
