@@ -215,7 +215,7 @@ session_start();
                         <form action="#" class="ltn__form-box contact-form-box" onSubmit="return false">
                             <input type="text" name="email" id="email" placeholder="Email*">
                             <input type="password" name="password" id="password" placeholder="Password*">
-                        <span>
+                        <span style="display:">
                             <i class="far fa-eye" aria-hidden="true" id="eye" onClick="Changepass()" style="position: absolute; right:50px; transform: translate(0, -50%); top: 45%; cursor: pointer;"></i>       
                         </span>
                            

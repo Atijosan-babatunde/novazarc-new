@@ -1,7 +1,7 @@
 <?php
 
 include("./cpanel/link.php");
-// session_start();
+session_start();
 
 
 ?>

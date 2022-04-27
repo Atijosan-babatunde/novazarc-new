@@ -135,7 +135,7 @@ if(isset($_SESSION['name']))
 
                 $('#cks').html("<span style='padding:5px'><i class='fa fa-spinner fa-spin'></i> Checking...</span>");
                 $.ajax({
-                    url: "../api/",
+                    url: "../Api/",
                     data: {typ: typ, eml: eml, pwd: pwd},
                     type: "POST",
                     success: function(data)

@@ -1,9 +1,3 @@
-<?php
-session_start();
-include ("./cpanel/link.php");
-
-?>
-
 <!doctype html>
 <html class="no-js" lang="zxx">
 
@@ -17,7 +11,7 @@ include ("./cpanel/link.php");
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <?php include ("./files.php");?>
+    <?php include ("files.php");?>
 </head>
 
 <body>
@@ -31,11 +25,11 @@ include ("./cpanel/link.php");
 <div class="body-wrapper">
 
     <!-- HEADER AREA START (header-5) -->
-    <?php include ("./navs.php");?>
+    <?php include ("navs.php");?>
     <!-- HEADER AREA END -->
 
     <!-- Utilize Cart Menu Start -->
- <?php include ("./navmobile.php");?>
+ <?php include ("navmobile.php");?>
     <!-- Utilize Mobile Menu End -->
 
     <div class="ltn__utilize-overlay"></div>

@@ -782,7 +782,6 @@ fieldset legend {
   background-color: #fff; }
 
 
- 
 
 
 @media (max-width: 991px) {
@@ -4362,17 +4361,6 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .ltn__main-menu li:hover > a {
   color: #dbae5f; }
 
-
-  /* .btn-slow {
-    display: inline-flex;
-    background-color: rgba(61,184,58,.2);
-    border-radius: 4px;
-    padding: 5px;
-    color: #3db83a;
-    margin-bottom: 10px;
-    margin-top: -5px;
-    cursor: pointer;
-} */
 /* Submenu */
 .ltn__main-menu li > ul,
 .ltn__main-menu .sub-menu {

@@ -1,9 +1,4 @@
-<?php 
-
-    session_start();
-include ("cpanel/link.php");
-
-?>
+<?php include ("cpanel/link.php");?>
 
 <!doctype html>
 <html class="no-js" lang="zxx">
@@ -19,7 +14,7 @@ include ("cpanel/link.php");
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Place favicon.png in the root directory -->
-<?php include("./files.php"); ?>
+<?php include("files.php"); ?>
 
 </head>
 
@@ -34,11 +29,11 @@ include ("cpanel/link.php");
 <div class="wrapper">
 
     <!-- HEADER AREA START (header-5) -->
-<?php include("./navs.php"); ?>
+<?php include("navs.php"); ?>
     <!-- HEADER AREA END -->
 
     <!-- Utilize Cart Menu Start -->
-    <?php include ("./navmobile.php");?>
+    <?php include ("navmobile.php");?>
 
  
     <div class="ltn__utilize-overlay"></div>
@@ -83,7 +78,7 @@ include ("cpanel/link.php");
                             <div class="ltn__product-tab-content-inner ltn__product-grid-view">
                                 <div class="row ltn__product-slider-item-three-active slick-arrow-1">
                                         <?php //require ("assets/ftprodt.php");
-                                        $qr = mysqli_query($link, "SELECT * FROM business WHERE cate !='' AND cate ='4' ORDER BY promotion");
+                                        $qr = mysqli_query($link, "SELECT * FROM business WHERE cate !='' AND cate ='4' AND promotion ='active' ");
                                         $bsn = mysqli_num_rows($qr) > 0;
                                                         
                                         ?>
@@ -164,40 +159,49 @@ elseif($rowb['ptype'] == 12)
                             <a href="product-details?pid=<?php echo $rowb['id'];?>"><img src="uploads/<?php echo $rowb['image'];?>"  alt="#"/></a>
                             
                             <div class="product-badgel">
-							<ul>
-								<?php
-								if ($rowb['negotiable'] == 1) {
-								?>
-									<li class="sale-badge bg-green"> Negotiable </li>
-								<?php
-								} else {
-								?>
-									<li class="sale-badge bg-danger">Non Negotiable </li>
-								<?php
-								}
-								?>
-							</ul>
-						</div>
-						<div class="product-badge">
-							<ul>
-								<?php
-								if ($rowb['promotion'] == 'active') {
-									?>
-									<li class="sale-badge bg-danger">Promoted</li>
-								<?php }
-								elseif ($rowb['status'] == 1) {
-								?>
-									<li class="sale-badge bg-green">Available</li>
-								<?php
-								} elseif ($rowb['status'] == 2) {
-								?>
-									<li class="sale-badge bg-danger">Not Available</li>
-								<?php
+                                <ul>
+                                <?php 
+                                   if($rowb['negotiable'] ==1)
+                                   {
+									   $uid = $rowb['uid'];
 
-								}
-								?>
-							</ul>
-						</div>
+                                        ?>
+                                            <li class="sale-badge bg-green"> Negotiable </li>
+                                        <?php
+                                   }
+                                    else
+                                    {
+                                        ?>
+                                        <li class="sale-badge bg-danger">Non Negotiable </li>
+                                        <?php
+                                    }
+                                ?>
+                                    
+                                     
+                                    
+                                </ul>
+                            </div>
+                            <div class="product-badge" >
+                            
+                                <ul>
+                                     
+									<?php 
+									if($rowb['status'] == 1)
+									{
+										?>
+                                    <li class="sale-badge bg-green">Available</li>
+                                        <?php
+									}
+									elseif($rowb['status'] == 2)
+									{
+										?>
+                                    <li class="sale-badge bg-danger">Not Available</li>
+                                        <?php
+											
+									}
+									?>
+                                </ul>
+                            </div>
                            <div class="product-img-location-gallery" style="padding-left: 10px;" >
                                  <div class="" style="padding-left: 0px;">
                                     <ul>

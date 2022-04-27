@@ -1,9 +1,3 @@
-<?php
-session_start();
-include ("./cpanel/link.php");
-
-?>
-
 <!doctype html>
 <html class="no-js" lang="zxx">
 
@@ -32,11 +26,11 @@ include ("./cpanel/link.php");
 <div class="body-wrapper">
 
     <!-- HEADER AREA START (header-5) -->
-<?php include("./navs.php"); ?>
+<?php include("navs.php"); ?>
     <!-- HEADER AREA END -->
 
     <!-- Utilize Cart Menu Start -->
-    <?php include ("./navmobile.php");?>
+    <?php include ("navmobile.php");?>
 
     <!-- Utilize Mobile Menu End -->
 

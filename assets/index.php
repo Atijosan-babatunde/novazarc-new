@@ -23,16 +23,11 @@ $pspace = strip_tags($_POST['pspace']);
 $ptype = strip_tags($_POST['ptype']);
 $condition = strip_tags($_POST['condition']);
 $furnishing = strip_tags($_POST['furnishing']);
-$pet = strip_tags($_POST['pet']);
-$smoking = strip_tags($_POST['smoking']);
-$party = strip_tags($_POST['party']);
-$population = strip_tags($_POST['population']);
 
 $broom = strip_tags($_POST['broom']);
 $batroom = strip_tags($_POST['batroom']);
 $toilet = strip_tags($_POST['toilet']);
 $price = strip_tags($_POST['price']);
-$tperiod = strip_tags($_POST['tperiod']);
 $negotiate = strip_tags($_POST['negotiate']);
 
 $elec = strip_tags($_POST['electricity']);
@@ -54,18 +49,8 @@ $frid = strip_tags($_POST['refrigerator']);
 $floor = strip_tags($_POST['tilefloor']);
 $tv = strip_tags($_POST['tv']);
 $war = strip_tags($_POST['wardrobe']);
+$wifi = strip_tags($_POST['wifi']);
 $shelf = strip_tags($_POST['kitchenshelf']);
-
-//new checkboxes
-$internet = strip_tags($_POST['internet']);
-$changing_room = strip_tags($_POST['changingroom']);
-$table = strip_tags($_POST['table']);
-$chair = strip_tags($_POST['chair']);
-$projector = strip_tags($_POST['projector']);
-$power_generator = strip_tags($_POST['powergenerator']);
-$sectional = strip_tags($_POST['sectional']);
-
-
 
 // agent fee
 $agent_fee = strip_tags($_POST['agent_fee']);
@@ -112,17 +97,13 @@ if ($goin == 1) {
 		business(`cate`, `purpose`, `catedescript`, `country`, `state`, `lga`, `address`, `estname`, `psize`, 
 		`pspace`, `ptype`, `condition`, `furnit`, `broom`, `batroom`, `toilet`, `price`, `negotiable`, 
 		`elec`, `aric`, `appart`, `bal`, `chan`, `dinning`, `dish`, `hot`, `kitchen`, `micro`, `pop`, 
-		`prepa`, `frid`, `floor`, `tv`, `war`, `shelf`, `sumnitdate`, `time`, `uemail`, `systemip`, 
-		`status`, `uname`, `uid`, `promotion`, `busiid`, `agent_fee`, `agreement_fee`, `commision_fee`, `pet`,
-		`smoking`, `party`, `population`, `internet`, `changing_room`, `tables`, `chair`, `projector`, 
-		`power_generator`, `sectional`, `tperiod`) 
+		`prepa`, `frid`, `floor`, `tv`, `war`, `wifi`, `shelf`, `sumnitdate`, `time`, `uemail`, `systemip`, 
+		`status`, `uname`, `uid`, `promotion`, `busiid`, `agent_fee`, `agreement_fee`, `commision_fee`) 
 		VALUES('$cate', '$purpose',  '$description', '$country', '$state', '$lga', '$address',	'$estname', '$psize', 
 		'$pspace', '$ptype', '$condition', '$furnishing', '$broom', '$batroom',	'$toilet', '$price', '$negotiate', 
 		'$elec', '$air', '$apart', '$balcony', '$chan', '$dinning', '$dishwash', '$hotwater', '$kitcab', 
-		'$micro', '$pop', '$prepa', '$frid', '$floor', '$tv', '$war', '$shelf',
-		'$dt', '$st', '$em', '$ip', '1','$uname', '$uid', 'inactive', '$transid', '$agent_fee', '$agreement_fee', '$commision_fee',
-		'$pet', '$smoking', '$party', '$population', '$internet', '$changing_room', '$table', '$chair', '$projector',
-		'$power_generator', '$sectional', '$tperiod')");
+		'$micro', '$pop', '$prepa', '$frid', '$floor', '$tv', '$war', '$wifi', '$shelf',
+		'$dt', '$st', '$em', '$ip', '1','$uname', '$uid', 'inactive', '$transid', '$agent_fee', '$agreement_fee', '$commision_fee')");
 
 	if ($query) {
 		echo "Good";
