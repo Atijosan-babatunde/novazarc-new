@@ -41,6 +41,19 @@ $_SESSION['US_ln'];
   }
 </style>
 
+<style>
+  .btn-to{
+    font-size:20px;
+    font-weight:600;
+
+  }
+  .modal-header{
+    background-color: #faa603;
+    color:#ffffff;
+    font-weight:600;
+  }
+</style>
+
 <body class="hold-transition sidebar-mini layout-fixed" onload="searchdata()">
   <div class="wrapper">
 
