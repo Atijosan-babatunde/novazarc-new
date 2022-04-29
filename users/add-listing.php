@@ -799,9 +799,42 @@ $_SESSION['US_ln'];
                         </div>
                         <p id="wke"> </p>
 
+                        <!--<div class="form-group">-->
+                        <!--  <br>-->
+                        <!--  <input type="submit" onClick="Doneall()" id="btnsave" class="btn btn-primary" value="Done">-->
+                        <!--</div>-->
+                        
+                        
+                        <!-- PROMOTION MODAL -->
                         <div class="form-group">
                           <br>
-                          <input type="submit" onClick="Doneall()" id="btnsave" class="btn btn-primary" value="Done">
+                          <button type="button" class="btn px-5 py-2 ft-2 fs-12 fw-600" style="background-color: #dbae5f; color: var(--white)" data-toggle="modal" data-target="#myModal2">Done</button>
+                        </div>
+
+                        <div id="myModal2" class="modal fade" role="dialog">
+                          <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h4 class="modal-title">Promotion</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                              </div>
+                              <div class="modal-body justify-content-center text-center">
+                                <p>Get your advert on the top of the page so it doesn't get lost behind thousands of others! Choose any of our category
+                                  and get it promoted on our Home page.
+
+                                <p class="mt-5 ">Promote ADS by clicking Continue.</p>
+                                </p>
+                              </div>
+                              <div class="modal-footer d-flex">
+                                <input type="submit" onClick="Doneall()" id="btnsave" class="btn px-5 py-2 ft-2 fs-12 fw-600" style="background-color: #dbae5f; color: var(--white);" value="Not interested">
+                                <button type="button" class="btn btn-default" data-dismiss="modal" onClick="DoneAds()">Proceed</button>
+                              </div>
+                            </div>
+
+                          </div>
                         </div>
                       </div>
 
@@ -1034,6 +1067,9 @@ $_SESSION['US_ln'];
 
     function Doneall() {
       location.href = "../";
+    }
+    function DoneAds() {
+      location.href = "../users/ads";
     }
   </script>
 </body>
