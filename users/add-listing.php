@@ -230,13 +230,13 @@ $_SESSION['US_ln'];
                         <label>Category * </label>
                         <select class="form-control" id="category" name="category" style="width: 100%;">
                           <option Value="" selected="selected">Select</option>
-                          <option value="7">Apartments</option>
-                          <option value="1">Houses</option>
-                          <option value="2">Hostel</option>
-                          <option value="3">Lands</option>
-                          <option value="4">Shortlet</option>
-                          <option value="5">Shops</option>
-                          <option value="6">Offices</option>
+                          <option value="apartment">Apartments</option>
+                          <option value="house">Houses</option>
+                          <option value="hostel">Hostel</option>
+                          <option value="lands">Lands</option>
+                          <option value="shortlet">Shortlet</option>
+                          <option value="shop">Shops</option>
+                          <option value="office">Offices</option>
                         </select>
                       </div>
                     </div>
@@ -402,18 +402,18 @@ $_SESSION['US_ln'];
                         <label>Property type </label>
                         <select class="form-control" name="ptype" id="ptype" style="width: 100%;">
                           <option value="" selected="selected">Select</option>
-                          <option value="1">Condo</option>
-                          <option value="2">Bungalow</option>
-                          <option value="3">Duplex</option>
-                          <option value="4">detached</option>
-                          <option value="5">Farmhouse</option>
-                          <option value="6">Penthouse</option>
-                          <option value="7">Studio</option>
-                          <option value="8">Miniflat</option>
-                          <option value="9">Villa</option>
-                          <option value="10">Mansion</option>
-                          <option value="11">Castle</option>
-                          <option value="12">Room & Parlor</option>
+                          <option value="condo">Condo</option>
+                          <option value="bungalow">Bungalow</option>
+                          <option value="duplex">Duplex</option>
+                          <option value="detached">detached</option>
+                          <option value="farm house">Farmhouse</option>
+                          <option value="pent house">Penthouse</option>
+                          <option value="studio">Studio</option>
+                          <option value="mini flat">Miniflat</option>
+                          <option value="villa">Villa</option>
+                          <option value="mansion">Mansion</option>
+                          <option value="castle">Castle</option>
+                          <option value="room and parlor">Room & Parlor</option>
                         </select>
                       </div>
                     </div>
@@ -425,9 +425,9 @@ $_SESSION['US_ln'];
                         <label>Condition * </label>
                         <select name="condition" class="nice-select form-control" id="condition">
                           <option Value="" selected="selected">Select</option>
-                          <option value="1">Faily Used</option>
-                          <option value="2">Newly Built</option>
-                          <option value="3">Used</option>
+                          <option value="Fairly Used">Faily Used</option>
+                          <option value="Newly Built">Newly Built</option>
+                          <option value="Used">Used</option>
                         </select>
                       </div>
 
@@ -438,9 +438,9 @@ $_SESSION['US_ln'];
                         <label>Furnishing </label>
                         <select name="furnishing" class="nice-select form-control" id="furnishing">
                           <option Value="" selected="selected">Select</option>
-                          <option value="1">Semi Furnishing</option>
-                          <option value="2">Furnished</option>
-                          <option value="3">Not Furnished</option>
+                          <option value="Semi Furnishing">Semi Furnishing</option>
+                          <option value="Furnished">Furnished</option>
+                          <option value="Not Furnished">Not Furnished</option>
                         </select>
                       </div>
 
@@ -523,8 +523,8 @@ $_SESSION['US_ln'];
                         <label>Pet </label>
                         <select type="text" class="form-control" name="pet" id="pet">
                           <option value="" selected="Selected">Select </option>
-                          <option value="1">Yes </option>
-                          <option value="2"> No</option>
+                          <option value="Yes">Yes </option>
+                          <option value="No"> No</option>
                         </select>
                       </div>
                     </div>
@@ -535,8 +535,8 @@ $_SESSION['US_ln'];
                         <label>Smoking </label>
                         <select type="text" class="form-control" name="smoking" id="smoking">
                           <option value="" selected="Selected">Select </option>
-                          <option value="1">Allowed </option>
-                          <option value="2"> Not Allowed</option>
+                          <option value="Allowed">Allowed </option>
+                          <option value="Not Allowed"> Not Allowed</option>
                         </select>
                       </div>
 
@@ -545,10 +545,10 @@ $_SESSION['US_ln'];
 
                       <div class="form-group">
                         <label>Party </label>
-                        <select type="text" class="form-control" name="smoking" id="smoking">
+                        <select type="text" class="form-control" name="party" id="party">
                           <option value="" selected="Selected">Select </option>
-                          <option value="1">Allowed </option>
-                          <option value="2"> Not Allowed</option>
+                          <option value="Allowed">Allowed </option>
+                          <option value="Not Allowed"> Not Allowed</option>
                         </select>
                       </div>
 
@@ -556,7 +556,7 @@ $_SESSION['US_ln'];
                     <div class="col-md-4">
                       <div class="form-group">
                         <label>Population </label>
-                        <input type="text" class="form-control" name="toilet" id="toilet" placeholder="1 - 100 ">
+                        <input type="text" class="form-control" name="population" id="toilet" placeholder="1 - 100 ">
                       </div>
 
                     </div>

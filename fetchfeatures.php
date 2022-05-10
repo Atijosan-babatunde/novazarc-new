@@ -24,7 +24,7 @@
 			<div class="col-md-3">
 				<div class="ltn__product-item ltn__product-item-4 text-center---">
 					<div class="product-img" style="padding-bottom:5px; margin-bottom:5px; max-height:200px; min-height:200px; opacity: 0.5;">
-						<a href="product-details?pid=<?php echo $rowb['id']; ?>"><img src="uploads/<?php echo $rowb['image']; ?>" alt="#" /></a>
+						<a href="./product-details.php?pid=<?php echo $rowb['id']; ?>"><img src="uploads/<?php echo $rowb['image']; ?>" alt="#" /></a>
 
 						<div class="product-badgel">
 							<ul>
@@ -79,15 +79,16 @@
 																										}
 																										?>
 						</strong>
-
+						<strong style="text-transform: uppercase;">&#8358;<?php echo $rowb['price']; ?> </strong>
 					</div>
 
 					<div class="product-img-location meright" style="font-size: 12px; padding-left: 10px; margin-bottom: 3px; ">
 						<i class="flaticon-pin"><?php echo $rowb['address']; ?></i>
 
-					</div>
+					</div> 
 					<div class="product-description" style="color:#090909; line-height: 0.9; padding-left: 10px; padding-right:5px; font-size: 14px;">
-						<p style="font-weight: bold;"><?php echo $rowb['catedescript']; ?>
+						<p style="font-weight: bold;"><?php echo $rowb['catedescript'];
+														?>
 						</p>
 					</div>
 
