@@ -203,6 +203,7 @@ $_SESSION['pid'] = $pid;
                                     <h4 class="title-2">Property Detail</h4>
                                     <div class="property-detail-info-list section-bg-1 clearfix mb-60">
                                         <ul>
+                                            <li><label>Agency Fee:</label> <span>&#8358;<?php echo $rows['agent_fee']; ?></span></li>
                                             <li><label>Commission Fee:</label> <span>&#8358;<?php echo $rows['commision_fee']; ?></span></li>
                                             <li><label>Agreement Fee:</label> <span>&#8358;<?php echo $rows['agreement_fee']; ?></span></li>
                                             <li><label>Estate name: </label> <span><?php echo $rows['estname']; ?></span></li>
@@ -231,7 +232,11 @@ $_SESSION['pid'] = $pid;
                                                     <i class="flaticon-double-bed"></i>
                                                     <div>
                                                         <h6>24 Hours Electricity</h6>
-                                                        <small><?php if($rows['elec'] == "yes") {echo $rows['elec'];} else {echo "No";}?> </small>
+                                                        <small><?php if ($rows['elec'] == "yes") {
+                                                                    echo $rows['elec'];
+                                                                } else {
+                                                                    echo "No";
+                                                                } ?> </small>
                                                     </div>
                                                 </div>
                                             </li>
@@ -240,7 +245,11 @@ $_SESSION['pid'] = $pid;
                                                     <i class="flaticon-double-bed"></i>
                                                     <div>
                                                         <h6>Air Conditioning </h6>
-                                                        <small><?php if($rows['aric'] == "yes") {echo $rows['aric'];} else {echo "No";}?></small>
+                                                        <small><?php if ($rows['aric'] == "yes") {
+                                                                    echo $rows['aric'];
+                                                                } else {
+                                                                    echo "No";
+                                                                } ?></small>
                                                     </div>
                                                 </div>
                                             </li>
@@ -249,7 +258,11 @@ $_SESSION['pid'] = $pid;
                                                     <i class="flaticon-double-bed"></i>
                                                     <div>
                                                         <h6>Apartment</h6>
-                                                        <small><?php if($rows['appart'] == "yes") {echo $rows['appart'];} else {echo "No";}?></small>
+                                                        <small><?php if ($rows['appart'] == "yes") {
+                                                                    echo $rows['appart'];
+                                                                } else {
+                                                                    echo "No";
+                                                                } ?></small>
                                                     </div>
                                                 </div>
                                             </li>
@@ -258,7 +271,11 @@ $_SESSION['pid'] = $pid;
                                                     <i class="flaticon-double-bed"></i>
                                                     <div>
                                                         <h6>Balcony</h6>
-                                                        <small><?php if($rows['bal'] == "yes") {echo $rows['bal'];} else {echo "No";}?></small>
+                                                        <small><?php if ($rows['bal'] == "yes") {
+                                                                    echo $rows['bal'];
+                                                                } else {
+                                                                    echo "No";
+                                                                } ?></small>
                                                     </div>
                                                 </div>
                                             </li>
@@ -267,7 +284,11 @@ $_SESSION['pid'] = $pid;
                                                     <i class="flaticon-double-bed"></i>
                                                     <div>
                                                         <h6>Chandelier</h6>
-                                                        <small><?php if($rows['chan'] == "yes") {echo $rows['chan'];} else {echo "No";}?></small>
+                                                        <small><?php if ($rows['chan'] == "yes") {
+                                                                    echo $rows['chan'];
+                                                                } else {
+                                                                    echo "No";
+                                                                } ?></small>
                                                     </div>
                                                 </div>
                                             </li>
@@ -276,7 +297,11 @@ $_SESSION['pid'] = $pid;
                                                     <i class="flaticon-double-bed"></i>
                                                     <div>
                                                         <h6>Dining Area</h6>
-                                                        <small><?php if($rows['dinning'] == "yes") {echo $rows['dinning'];} else {echo "No";}?></small>
+                                                        <small><?php if ($rows['dinning'] == "yes") {
+                                                                    echo $rows['dinning'];
+                                                                } else {
+                                                                    echo "No";
+                                                                } ?></small>
                                                     </div>
                                                 </div>
                                             </li>
@@ -285,7 +310,11 @@ $_SESSION['pid'] = $pid;
                                                     <i class="flaticon-double-bed"></i>
                                                     <div>
                                                         <h6>Dishwasher</h6>
-                                                        <small><?php if($rows['dish'] == "yes") {echo $rows['dish'];} else {echo "No";}?></small>
+                                                        <small><?php if ($rows['dish'] == "yes") {
+                                                                    echo $rows['dish'];
+                                                                } else {
+                                                                    echo "No";
+                                                                } ?></small>
                                                     </div>
                                                 </div>
                                             </li>
@@ -294,7 +323,11 @@ $_SESSION['pid'] = $pid;
                                                     <i class="flaticon-double-bed"></i>
                                                     <div>
                                                         <h6>Hot water</h6>
-                                                        <small><?php if($rows['hot'] == "yes") {echo $rows['hot'];} else {echo "No";}?></small>
+                                                        <small><?php if ($rows['hot'] == "yes") {
+                                                                    echo $rows['hot'];
+                                                                } else {
+                                                                    echo "No";
+                                                                } ?></small>
                                                     </div>
                                                 </div>
                                             </li>
@@ -304,7 +337,11 @@ $_SESSION['pid'] = $pid;
                                                     <i class="flaticon-double-bed"></i>
                                                     <div>
                                                         <h6>Kitchen Carbinet</h6>
-                                                        <small><?php if($rows['kitchen'] == "yes") {echo $rows['kitchen'];} else {echo "No";}?></small>
+                                                        <small><?php if ($rows['kitchen'] == "yes") {
+                                                                    echo $rows['kitchen'];
+                                                                } else {
+                                                                    echo "No";
+                                                                } ?></small>
                                                     </div>
                                                 </div>
                                             </li>
@@ -313,7 +350,11 @@ $_SESSION['pid'] = $pid;
                                                     <i class="flaticon-double-bed"></i>
                                                     <div>
                                                         <h6>Microwave</h6>
-                                                        <small><?php if($rows['micro'] == "yes") {echo $rows['micro'];} else {echo "No";}?></small>
+                                                        <small><?php if ($rows['micro'] == "yes") {
+                                                                    echo $rows['micro'];
+                                                                } else {
+                                                                    echo "No";
+                                                                } ?></small>
                                                     </div>
                                                 </div>
                                             </li>
@@ -322,7 +363,11 @@ $_SESSION['pid'] = $pid;
                                                     <i class="flaticon-double-bed"></i>
                                                     <div>
                                                         <h6>Pop Ceiling</h6>
-                                                        <small><?php if($rows['pop'] == "yes") {echo $rows['pop'];} else {echo "No";}?></small>
+                                                        <small><?php if ($rows['pop'] == "yes") {
+                                                                    echo $rows['pop'];
+                                                                } else {
+                                                                    echo "No";
+                                                                } ?></small>
                                                     </div>
                                                 </div>
                                             </li>
@@ -331,7 +376,11 @@ $_SESSION['pid'] = $pid;
                                                     <i class="flaticon-double-bed"></i>
                                                     <div>
                                                         <h6>Prepaid Meter</h6>
-                                                        <small><?php if($rows['prepa'] == "yes") {echo $rows['prepa'];} else {echo "No";}?></small>
+                                                        <small><?php if ($rows['prepa'] == "yes") {
+                                                                    echo $rows['prepa'];
+                                                                } else {
+                                                                    echo "No";
+                                                                } ?></small>
                                                     </div>
                                                 </div>
                                             </li>
@@ -340,7 +389,11 @@ $_SESSION['pid'] = $pid;
                                                     <i class="flaticon-double-bed"></i>
                                                     <div>
                                                         <h6>Refrigerator</h6>
-                                                        <small><?php if($rows['frid'] == "yes") {echo $rows['frid'];} else {echo "No";}?></small>
+                                                        <small><?php if ($rows['frid'] == "yes") {
+                                                                    echo $rows['frid'];
+                                                                } else {
+                                                                    echo "No";
+                                                                } ?></small>
                                                     </div>
                                                 </div>
                                             </li>
@@ -349,7 +402,11 @@ $_SESSION['pid'] = $pid;
                                                     <i class="flaticon-double-bed"></i>
                                                     <div>
                                                         <h6>Tiled Floor</h6>
-                                                        <small><?php if($rows['floor'] == "yes") {echo $rows['floor'];} else {echo "No";}?></small>
+                                                        <small><?php if ($rows['floor'] == "yes") {
+                                                                    echo $rows['floor'];
+                                                                } else {
+                                                                    echo "No";
+                                                                } ?></small>
                                                     </div>
                                                 </div>
                                             </li>
@@ -358,7 +415,11 @@ $_SESSION['pid'] = $pid;
                                                     <i class="flaticon-double-bed"></i>
                                                     <div>
                                                         <h6>Television </h6>
-                                                        <small><?php if($rows['tv'] == "yes") {echo $rows['tv'];} else {echo "No";}?></small>
+                                                        <small><?php if ($rows['tv'] == "yes") {
+                                                                    echo $rows['tv'];
+                                                                } else {
+                                                                    echo "No";
+                                                                } ?></small>
                                                     </div>
                                                 </div>
                                             </li>
@@ -367,7 +428,11 @@ $_SESSION['pid'] = $pid;
                                                     <i class="flaticon-double-bed"></i>
                                                     <div>
                                                         <h6>Wardrobe</h6>
-                                                        <small><?php if($rows['war'] == "yes") {echo $rows['war'];} else {echo "No";}?></small>
+                                                        <small><?php if ($rows['war'] == "yes") {
+                                                                    echo $rows['war'];
+                                                                } else {
+                                                                    echo "No";
+                                                                } ?></small>
                                                     </div>
                                                 </div>
                                             </li>
@@ -376,7 +441,11 @@ $_SESSION['pid'] = $pid;
                                                     <i class="flaticon-double-bed"></i>
                                                     <div>
                                                         <h6>Internet</h6>
-                                                        <small><?php if($rows['internet'] == "yes") {echo $rows['internet'];} else {echo "No";}?></small>
+                                                        <small><?php if ($rows['internet'] == "yes") {
+                                                                    echo $rows['internet'];
+                                                                } else {
+                                                                    echo "No";
+                                                                } ?></small>
                                                     </div>
                                                 </div>
                                             </li>
@@ -385,7 +454,11 @@ $_SESSION['pid'] = $pid;
                                                     <i class="flaticon-double-bed"></i>
                                                     <div>
                                                         <h6>Kitchen Shelf</h6>
-                                                        <small><?php if($rows['shelf'] == "yes") {echo $rows['shelf'];} else { echo "No";}?></small>
+                                                        <small><?php if ($rows['shelf'] == "yes") {
+                                                                    echo $rows['shelf'];
+                                                                } else {
+                                                                    echo "No";
+                                                                } ?></small>
                                                     </div>
                                                 </div>
                                             </li>
@@ -394,7 +467,11 @@ $_SESSION['pid'] = $pid;
                                                     <i class="flaticon-double-bed"></i>
                                                     <div>
                                                         <h6>Changing Room</h6>
-                                                        <small><?php if($rows['changing_room'] == "yes") {echo $rows['changing_room'];} else {echo "No";}?></small>
+                                                        <small><?php if ($rows['changing_room'] == "yes") {
+                                                                    echo $rows['changing_room'];
+                                                                } else {
+                                                                    echo "No";
+                                                                } ?></small>
                                                     </div>
                                                 </div>
                                             </li>
@@ -403,7 +480,11 @@ $_SESSION['pid'] = $pid;
                                                     <i class="flaticon-double-bed"></i>
                                                     <div>
                                                         <h6>Table</h6>
-                                                        <small><?php if($rows['tables'] == "yes") { echo $rows['tables'];} else {echo "No";}?></small>
+                                                        <small><?php if ($rows['tables'] == "yes") {
+                                                                    echo $rows['tables'];
+                                                                } else {
+                                                                    echo "No";
+                                                                } ?></small>
                                                     </div>
                                                 </div>
                                             </li>
@@ -412,7 +493,11 @@ $_SESSION['pid'] = $pid;
                                                     <i class="flaticon-double-bed"></i>
                                                     <div>
                                                         <h6>Chair</h6>
-                                                        <small><?php if($rows['chair'] == "yes") {echo $rows['chair'];} else {echo "No";}?></small>
+                                                        <small><?php if ($rows['chair'] == "yes") {
+                                                                    echo $rows['chair'];
+                                                                } else {
+                                                                    echo "No";
+                                                                } ?></small>
                                                     </div>
                                                 </div>
                                             </li>
@@ -421,7 +506,11 @@ $_SESSION['pid'] = $pid;
                                                     <i class="flaticon-double-bed"></i>
                                                     <div>
                                                         <h6>Projector</h6>
-                                                        <small><?php if($rows['projector'] == "yes") {echo $rows['projector'];} else{echo "No";} ?></small>
+                                                        <small><?php if ($rows['projector'] == "yes") {
+                                                                    echo $rows['projector'];
+                                                                } else {
+                                                                    echo "No";
+                                                                } ?></small>
                                                     </div>
                                                 </div>
                                             </li>
@@ -430,7 +519,11 @@ $_SESSION['pid'] = $pid;
                                                     <i class="flaticon-double-bed"></i>
                                                     <div>
                                                         <h6>Power Generator</h6>
-                                                        <small><?php if($rows['power_generator'] == "yes") { echo $rows['power_generator'];} else { echo "No";}?></small>
+                                                        <small><?php if ($rows['power_generator'] == "yes") {
+                                                                    echo $rows['power_generator'];
+                                                                } else {
+                                                                    echo "No";
+                                                                } ?></small>
                                                     </div>
                                                 </div>
                                             </li>
@@ -439,7 +532,11 @@ $_SESSION['pid'] = $pid;
                                                     <i class="flaticon-double-bed"></i>
                                                     <div>
                                                         <h6>Sectional</h6>
-                                                        <small><?php if($rows['sectional'] == "yes") { echo $rows['sectional'];} else {echo "No";} ?></small>
+                                                        <small><?php if ($rows['sectional'] == "yes") {
+                                                                    echo $rows['sectional'];
+                                                                } else {
+                                                                    echo "No";
+                                                                } ?></small>
                                                     </div>
                                                 </div>
                                             </li>
