@@ -121,11 +121,13 @@
                             <h4 class="footer-title">Services</h4>
                             <div class="footer-menu">
                                 <ul>
-                                    
+                                    <li><a href="apartment">Apartment</a></li>
                                     <li><a href="hostel">Hostel</a></li>
                                     <li><a href="houses">Houses</a></li>
                                     <li><a href="shortlet">Shortlet</a></li>
                                     <li><a href="land">Lands</a></li>
+                                    <li><a href="offices">Offices</a></li>
+                                    <li><a href="shop">Shops</a></li>
                                     
                                 </ul>
                             </div>
