@@ -20,17 +20,26 @@ $_SESSION['US_ln'];
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Novazarc Properties | Admin - Dashboard </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <!-- Google Font: Source Sans Pro -->
   <?php include("../links/jsStyles.php"); ?>
 
-  <link rel="stylesheet" 
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-
-
-  
 
 
 </head>
+<style>
+  .btn-to {
+    font-size: 20px;
+    font-weight: 600;
+
+  }
+
+  .modal-header {
+    background-color: #faa603;
+    color: #ffffff;
+    font-weight: 600;
+  }
+</style>
 
 <style>
   .btn-to{
@@ -93,122 +102,123 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
 
                 <div id="part1">
                   <div class="d-flex" style="justify-content: space-between">
-                  <p style="font-size:10px; color:red"> Note: Fields with astericks are compulsory </p>
-                  <button type="button" class="btn btn-slow mb-2" data-toggle="modal" data-target="#myModal" style=" background-color: rgba(61,184,58,.2); border-radius: 4px; padding: 5px; color: #3db83a; margin-bottom: 10px; margin-top: -5px; cursor: pointer;"><i class="fa-solid fa-circle-info mr-1"></i>Guides</button>
-                     
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">Add Listing Guide</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          
-        </div>
-        <div class="modal-body">
-        <div id="accordion">
-  <div class="card">
-    <div class="card-header" id="headingOne">
-      <h5 class="mb-0">
-        <button class="btn btn-to" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Property Description 
-        </button>
-      </h5>
-    </div>
+                    <p style="font-size:10px; color:red"> Note: Fields with astericks are compulsory </p>
+                    <button type="button" class="btn btn-slow mb-2" data-toggle="modal" data-target="#myModal" style=" background-color: rgba(61,184,58,.2); border-radius: 4px; padding: 5px; color: #3db83a; margin-bottom: 10px; margin-top: -5px; cursor: pointer;"><i class="fa-solid fa-circle-info mr-1"></i>Guides</button>
 
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-      <div class="card-body">
-      Whatever you'd like to say about your apartment, say it. Describe the category and area where it's located 
-      and state all the pros and cons. Convince buyers that this place is 
-      worth seeing and ultimately moving in to, also specify the purpose either for rent or for sale. The primary purpose is to 
-      gain attention and entice people. 
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingTwo">
-      <h5 class="mb-0">
-        <button class="btn btn-to collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-         Location
-        </button>
-      </h5>
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-      <div class="card-body">
-      Click on the country selection box, to describe the country and the area where its located. 
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingThree">
-      <h5 class="mb-0">
-        <button class="btn btn-to collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Property Address
-        </button>
-      </h5>
-    </div>
-    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-      <div class="card-body">
-      Help buyers to understand better the space and overall size of your apartment. Do you offer parking spaces?  The number of rooms, The exact address,
-       square meters usually are the main criteria for filtering suitable options.
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingTwo">
-      <h5 class="mb-0">
-        <button class="btn btn-to collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Property Status
-        </button>
-      </h5>
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-      <div class="card-body">
-         Is your apartment furnished? What is the condition of your apartment? Specify whether the place is newly 
-      built or had previously been occupied so buyers could see the full picture.
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingTwo">
-      <h5 class="mb-0">
-        <button class="btn btn-to collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Interior Facilities
-        </button>
-      </h5>
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-      <div class="card-body">
-        Select how many bathrooms, Toilets and Bedrooms. Be specific enough to convince the customer.
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingTwo">
-      <h5 class="mb-0">
-        <button class="btn btn-to collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Pricing & Negotiation
-        </button>
-      </h5>
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-      <div class="card-body">
-      What's the cost? Specify your last price or click on 'Negotiable' to let buyers know that you're ready to bargain.
-      </div>
-    </div>
-  </div>
-</div>
-        </div>
-        
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-</div>
+                    <div class="modal fade" id="myModal" role="dialog">
+                      <div class="modal-dialog">
+
+
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h4 class="modal-title">Add Listing Guide</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                          </div>
+                          <div class="modal-body">
+                            <div id="accordion">
+                              <div class="card">
+                                <div class="card-header" id="headingOne">
+                                  <h5 class="mb-0">
+                                    <button class="btn btn-to" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                      Property Description
+                                    </button>
+                                  </h5>
+                                </div>
+
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                  <div class="card-body">
+                                    Whatever you'd like to say about your apartment, say it. Describe the category and area where it's located
+                                    and state all the pros and cons. Convince buyers that this place is
+                                    worth seeing and ultimately moving in to, also specify the purpose either for rent or for sale. The primary purpose is to
+                                    gain attention and entice people.
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                  <h5 class="mb-0">
+                                    <button class="btn btn-to collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                      Location
+                                    </button>
+                                  </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                  <div class="card-body">
+                                    Click on the country selection box, to describe the country and the area where its located.
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingThree">
+                                  <h5 class="mb-0">
+                                    <button class="btn btn-to collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                      Property Address
+                                    </button>
+                                  </h5>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                  <div class="card-body">
+                                    Help buyers to understand better the space and overall size of your apartment. Do you offer parking spaces? The number of rooms, The exact address,
+                                    square meters usually are the main criteria for filtering suitable options.
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                  <h5 class="mb-0">
+                                    <button class="btn btn-to collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                      Property Status
+                                    </button>
+                                  </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                  <div class="card-body">
+                                    Is your apartment furnished? What is the condition of your apartment? Specify whether the place is newly
+                                    built or had previously been occupied so buyers could see the full picture.
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                  <h5 class="mb-0">
+                                    <button class="btn btn-to collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                      Interior Facilities
+                                    </button>
+                                  </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                  <div class="card-body">
+                                    Select how many bathrooms, Toilets and Bedrooms. Be specific enough to convince the customer.
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                  <h5 class="mb-0">
+                                    <button class="btn btn-to collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                      Pricing & Negotiation
+                                    </button>
+                                  </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                  <div class="card-body">
+                                    What's the cost? Specify your last price or click on 'Negotiable' to let buyers know that you're ready to bargain.
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
 
                   <div class="row" id="moree">
                     <h3 class="card-title mb-4">PROPERTY DESCRIPTION</h3>
@@ -220,13 +230,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
                         <label>Category * </label>
                         <select class="form-control" id="category" name="category" style="width: 100%;">
                           <option Value="" selected="selected">Select</option>
-                          <option value="7">Apartments</option>
-                          <option value="1">Houses</option>
-                          <option value="2">Hostel</option>
-                          <option value="3">Lands</option>
-                          <option value="4">Shortlet</option>
-                          <option value="5">Shops</option>
-                          <option value="6">Offices</option>
+                          <option value="apartment">Apartments</option>
+                          <option value="house">Houses</option>
+                          <option value="hostel">Hostel</option>
+                          <option value="lands">Lands</option>
+                          <option value="shortlet">Shortlet</option>
+                          <option value="shop">Shops</option>
+                          <option value="office">Offices</option>
                         </select>
                       </div>
                     </div>
@@ -392,18 +402,18 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
                         <label>Property type </label>
                         <select class="form-control" name="ptype" id="ptype" style="width: 100%;">
                           <option value="" selected="selected">Select</option>
-                          <option value="1">Condo</option>
-                          <option value="2">Bungalow</option>
-                          <option value="3">Duplex</option>
-                          <option value="4">detached</option>
-                          <option value="5">Farmhouse</option>
-                          <option value="6">Penthouse</option>
-                          <option value="7">Studio</option>
-                          <option value="8">Miniflat</option>
-                          <option value="9">Villa</option>
-                          <option value="10">Mansion</option>
-                          <option value="11">Castle</option>
-                          <option value="12">Room & Parlor</option>
+                          <option value="condo">Condo</option>
+                          <option value="bungalow">Bungalow</option>
+                          <option value="duplex">Duplex</option>
+                          <option value="detached">detached</option>
+                          <option value="farm house">Farmhouse</option>
+                          <option value="pent house">Penthouse</option>
+                          <option value="studio">Studio</option>
+                          <option value="mini flat">Miniflat</option>
+                          <option value="villa">Villa</option>
+                          <option value="mansion">Mansion</option>
+                          <option value="castle">Castle</option>
+                          <option value="room and parlor">Room & Parlor</option>
                         </select>
                       </div>
                     </div>
@@ -415,9 +425,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
                         <label>Condition * </label>
                         <select name="condition" class="nice-select form-control" id="condition">
                           <option Value="" selected="selected">Select</option>
-                          <option value="1">Faily Used</option>
-                          <option value="2">Newly Built</option>
-                          <option value="3">Used</option>
+                          <option value="Fairly Used">Faily Used</option>
+                          <option value="Newly Built">Newly Built</option>
+                          <option value="Used">Used</option>
                         </select>
                       </div>
 
@@ -428,9 +438,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
                         <label>Furnishing </label>
                         <select name="furnishing" class="nice-select form-control" id="furnishing">
                           <option Value="" selected="selected">Select</option>
-                          <option value="1">Semi Furnishing</option>
-                          <option value="2">Furnished</option>
-                          <option value="3">Not Furnished</option>
+                          <option value="Semi Furnishing">Semi Furnishing</option>
+                          <option value="Furnished">Furnished</option>
+                          <option value="Not Furnished">Not Furnished</option>
                         </select>
                       </div>
 
@@ -513,8 +523,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
                         <label>Pet </label>
                         <select type="text" class="form-control" name="pet" id="pet">
                           <option value="" selected="Selected">Select </option>
-                          <option value="1">Yes </option>
-                          <option value="2"> No</option>
+                          <option value="Yes">Yes </option>
+                          <option value="No"> No</option>
                         </select>
                       </div>
                     </div>
@@ -525,8 +535,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
                         <label>Smoking </label>
                         <select type="text" class="form-control" name="smoking" id="smoking">
                           <option value="" selected="Selected">Select </option>
-                          <option value="1">Allowed </option>
-                          <option value="2"> Not Allowed</option>
+                          <option value="Allowed">Allowed </option>
+                          <option value="Not Allowed"> Not Allowed</option>
                         </select>
                       </div>
 
@@ -535,10 +545,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
 
                       <div class="form-group">
                         <label>Party </label>
-                        <select type="text" class="form-control" name="smoking" id="smoking">
+                        <select type="text" class="form-control" name="party" id="party">
                           <option value="" selected="Selected">Select </option>
-                          <option value="1">Allowed </option>
-                          <option value="2"> Not Allowed</option>
+                          <option value="Allowed">Allowed </option>
+                          <option value="Not Allowed"> Not Allowed</option>
                         </select>
                       </div>
 
@@ -546,7 +556,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
                     <div class="col-md-4">
                       <div class="form-group">
                         <label>Population </label>
-                        <input type="text" class="form-control" name="toilet" id="toilet" placeholder="1 - 100 ">
+                        <input type="text" class="form-control" name="population" id="toilet" placeholder="1 - 100 ">
                       </div>
 
                     </div>
@@ -748,14 +758,14 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
                     <div class="col-md-4">
                       <div class="form-group">
                         <br>
-                        <input type="submit" onClick=" Show()" class="btn px-5 py-2 ft-2 fs-12 fw-600" style="background-color: #dbae5f; color: var(--white);" value="Previous">
+                        <input type="submit" onClick=" Show()" class="btn btn-primary" value="Previous">
                       </div>
 
                     </div>
                     <div class="col-md-4">
                       <div class="form-group">
                         <br>
-                        <input type="submit" onClick="Postings()" id="btnsave" class="btn px-5 py-2 ft-2 fs-12 fw-600" style="background-color: #dbae5f; color: var(--white);" value="Add listing">
+                        <input type="submit" onClick="Postings()" id="btnsave" class="btn btn-primary" value="Add listing">
                       </div>
 
                     </div>
@@ -789,9 +799,42 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
                         </div>
                         <p id="wke"> </p>
 
+                        <!--<div class="form-group">-->
+                        <!--  <br>-->
+                        <!--  <input type="submit" onClick="Doneall()" id="btnsave" class="btn btn-primary" value="Done">-->
+                        <!--</div>-->
+                        
+                        
+                        <!-- PROMOTION MODAL -->
                         <div class="form-group">
                           <br>
-                          <input type="submit" onClick="Doneall()" id="btnsave" class="btn btn-primary" value="Done">
+                          <button type="button" class="btn px-5 py-2 ft-2 fs-12 fw-600" style="background-color: #dbae5f; color: var(--white)" data-toggle="modal" data-target="#myModal2">Done</button>
+                        </div>
+
+                        <div id="myModal2" class="modal fade" role="dialog">
+                          <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h4 class="modal-title">Promotion</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                              </div>
+                              <div class="modal-body justify-content-center text-center">
+                                <p>Get your advert on the top of the page so it doesn't get lost behind thousands of others! Choose any of our category
+                                  and get it promoted on our Home page.
+
+                                <p class="mt-5 ">Promote ADS by clicking Continue.</p>
+                                </p>
+                              </div>
+                              <div class="modal-footer d-flex">
+                                <input type="submit" onClick="Doneall()" id="btnsave" class="btn px-5 py-2 ft-2 fs-12 fw-600" style="background-color: #dbae5f; color: var(--white);" value="Not interested">
+                                <button type="button" class="btn btn-default" data-dismiss="modal" onClick="DoneAds()">Proceed</button>
+                              </div>
+                            </div>
+
+                          </div>
                         </div>
                       </div>
 
@@ -812,13 +855,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
 
 
   <script src="../plugins/jquery/jquery.min.js"></script>
-
-  
-
-     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
 
 
   <script src="../plugins/jquery-ui/jquery-ui.min.js"></script>
@@ -1031,6 +1067,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
 
     function Doneall() {
       location.href = "../";
+    }
+    function DoneAds() {
+      location.href = "../users/ads";
     }
   </script>
 </body>

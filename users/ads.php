@@ -9,7 +9,7 @@ if (empty($_SESSION['LOGIN_STATE'])) {
 }
 
 $uml =  $_SESSION['US_mail'];
-$qry  = mysqli_query($link, "SELECT * FROM business WHERE uemail = '$uml' ");
+$qry  = mysqli_query($link, "SELECT * FROM business WHERE uemail = '$uml' ORDER BY sumnitdate");
 
 
 ?>
@@ -92,7 +92,7 @@ $qry  = mysqli_query($link, "SELECT * FROM business WHERE uemail = '$uml' ");
                       <tbody class="">
                         <?php
 
-                        $qur  = mysqli_query($link, "SELECT * FROM business WHERE uemail = '$uml' ");
+                        $qur  = mysqli_query($link, "SELECT * FROM business WHERE uemail = '$uml' ORDER BY sumnitdate DESC");
 
                         $i = 1;
 
@@ -106,7 +106,7 @@ $qry  = mysqli_query($link, "SELECT * FROM business WHERE uemail = '$uml' ");
                                 } elseif ($rows['promotion'] == 'active') {
                                   echo 'Promoted';
                                 } else {
-                                  echo 'Renew Promotion';
+                                  echo 'Promote Now';
                                 }
                                 ?>
 
@@ -145,7 +145,7 @@ $qry  = mysqli_query($link, "SELECT * FROM business WHERE uemail = '$uml' ");
                                                     } elseif ($rows['promotion'] == 'active') {
                                                       echo 'Ads running';
                                                     } else {
-                                                      echo 'Ads Expired';
+                                                      echo 'Not Promoted';
                                                     }
                                                     ?> </td>
 
@@ -287,7 +287,7 @@ $qry  = mysqli_query($link, "SELECT * FROM business WHERE uemail = '$uml' ");
 
           type: "POST",
 
-          url: "../Api/",
+          url: "../api/",
 
           cache: false,
 
