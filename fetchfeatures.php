@@ -79,7 +79,7 @@
 																										}
 																										?>
 						</strong>
-						<strong style="text-transform: uppercase;">&#8358;<?php echo $rowb['price']; ?> </strong>
+						<strong style="text-transform: uppercase; color:#dbae5f">&#8358;<?php echo $rowb['price']; ?> </strong>
 					</div>
 
 					<div class="product-img-location meright" style="font-size: 12px; padding-left: 10px; margin-bottom: 3px; ">
