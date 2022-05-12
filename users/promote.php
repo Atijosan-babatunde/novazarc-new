@@ -113,7 +113,7 @@ while ($row = mysqli_fetch_array($qry)) {
                       <div class="col-md-12">
                         <div class="row">
                           <div class="col-md-4">
-                            <input type="submit" onClick="Pay()" class="btn btn-primary" value="Pay">
+                            <input type="submit" onClick="Pay()" class="btn px-5 py-2 ft-2 fs-12 fw-600" style="background-color: #dbae5f; color: var(--white);" value="Pay">
                           </div>
                         </div>
                       </div>
@@ -125,12 +125,12 @@ while ($row = mysqli_fetch_array($qry)) {
 
                 <div class="col-md-6 " style="display: none">
                   <form method="post" onSubmit="return false;">
-                    <input type="submit" onClick="Saveall()" value="Pay">
+                    <input type="submit" onClick="Saveall()" class="btn px-5 py-2 ft-2 fs-12 fw-600" style="background-color: #dbae5f; color: var(--white);" value="Pay">
                   </form>
                 </div>
               </div>
               <br> <br>
-              <div class="card-footer"> Ads </div>
+              <!-- <div class="card-footer"> Ads </div> -->
             </div>
       </section>
 
