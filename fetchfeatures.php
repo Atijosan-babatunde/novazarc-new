@@ -81,8 +81,9 @@
 						</strong>
 						
 					</div>
-                       
-					<strong style="text-transform: uppercase; color:#dbae5f, line-height: 0.9; font-weight:600, font-size:14px;">&#8358;<?php echo $rowb['price']; ?> </strong> 
+                      <div style=" padding-left:10px;"> 
+					     <strong style="text-transform: uppercase; color:#dbae5f, line-height: 0.5; font-weight:bold, font-size:12px;">&#8358;<?php echo $rowb['price']; ?> </strong> 
+					 </div>
 					<div class="product-img-location meright" style="font-size: 12px; padding-left: 10px; margin-bottom: 3px; ">
 						<i class="flaticon-pin"><?php echo $rowb['address']; ?></i>
 

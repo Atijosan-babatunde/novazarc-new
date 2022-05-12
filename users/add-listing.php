@@ -758,14 +758,14 @@ $_SESSION['US_ln'];
                     <div class="col-md-4">
                       <div class="form-group">
                         <br>
-                        <input type="submit" onClick=" Show()" class="btn btn-primary" value="Previous">
+                        <input type="submit" onClick=" Show()" class="btn px-5 py-2 ft-2 fs-12 fw-600" style="background-color: #dbae5f; color: var(--white);" value="Previous">
                       </div>
 
                     </div>
                     <div class="col-md-4">
                       <div class="form-group">
                         <br>
-                        <input type="submit" onClick="Postings()" id="btnsave" class="btn btn-primary" value="Add listing">
+                        <input type="submit" onClick="Postings()" id="btnsave" class="btn px-5 py-2 ft-2 fs-12 fw-600" style="background-color: #dbae5f; color: var(--white);" value="Add listing">
                       </div>
 
                     </div>
