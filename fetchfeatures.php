@@ -81,9 +81,7 @@
 						</strong>
 						
 					</div>
-                      <div style=" padding-left:10px; color:#dbae5f"> 
-					     <strong style=" line-height: 0.5; font-weight:bold, font-size:12px;">&#8358;<?php echo $rowb['price']; ?> </strong> 
-					 </div>
+                    
 					<div class="product-img-location meright" style="font-size: 12px; padding-left: 10px; margin-bottom: 3px; ">
 						<i class="flaticon-pin"><?php echo $rowb['address']; ?></i>
 
@@ -93,6 +91,9 @@
 														?>
 						</p>
 					</div>
+					<div style=" padding-left:10px; color:#dbae5f"> 
+					     <strong style=" line-height: 0.5; font-weight:bold, font-size:12px;">&#8358;<?php echo $rowb['price']; ?> </strong> 
+					 </div>
 
 					<?php
 					include("bbrooms.php");

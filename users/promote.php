@@ -57,11 +57,11 @@ while ($row = mysqli_fetch_array($qry)) {
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h3 class="m-0">Promote My Ads</h3>
+              <h3 class="m-0" style="font-weight:600;">Promote My Ads</h3>
             </div>
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
-                <li class="breadcrumb-item"><a href="../">Portal Home</a></li>
+                <li class="breadcrumb-item"><a class="px-4 py-2 mt-3" href="../" style="background-color: #dbae5f; color: var(--white); border-radius:3px">Home</a></li>
               </ol>
             </div>
           </div>
