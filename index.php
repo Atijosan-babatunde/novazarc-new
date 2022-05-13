@@ -20,6 +20,7 @@ include("cpanel/link.php");
     <?php include("./files.php"); ?>
 </head>
 
+
 <body>
     <!--[if lte IE 9]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
@@ -97,7 +98,7 @@ include("cpanel/link.php");
                                             <div class="car-dealer-form-inner">
                                                 <form method="post" class="ltn__car-dealer-form-box row" onSubmit="return false">
                                                     <div class="ltn__car-dealer-form-item ltn__custom-icon---- ltn__icon-meter---- col-lg-3 col-md-6">
-                                                        <input class="nice-select" id="area" name="area" placeholder="Property Location" type="text" style="font-size: 16px;     color:black; font-weight: 500; font-family: var(--ltn__heading-font); line-height: 58px">
+                                                        <input class="nice-select" id="area" name="area" placeholder="Property Location" type="text" style="font-size: 16px; font-weight: 500; font-family: var(--ltn__heading-font); line-height: 58px">
                                                     </div>
 
 
