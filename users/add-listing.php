@@ -167,12 +167,12 @@ $_SESSION['US_ln'];
                               <div class="card">
                                 <div class="card-header" id="headingTwo">
                                   <h5 class="mb-0">
-                                    <button class="btn btn-to collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <button class="btn btn-to collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                       Property Status
                                     </button>
                                   </h5>
                                 </div>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                                   <div class="card-body">
                                     Is your apartment furnished? What is the condition of your apartment? Specify whether the place is newly
                                     built or had previously been occupied so buyers could see the full picture.
@@ -182,12 +182,12 @@ $_SESSION['US_ln'];
                               <div class="card">
                                 <div class="card-header" id="headingTwo">
                                   <h5 class="mb-0">
-                                    <button class="btn btn-to collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <button class="btn btn-to collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                                       Interior Facilities
                                     </button>
                                   </h5>
                                 </div>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div id="collapseFive" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                                   <div class="card-body">
                                     Select how many bathrooms, Toilets and Bedrooms. Be specific enough to convince the customer.
                                   </div>
@@ -196,12 +196,12 @@ $_SESSION['US_ln'];
                               <div class="card">
                                 <div class="card-header" id="headingTwo">
                                   <h5 class="mb-0">
-                                    <button class="btn btn-to collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <button class="btn btn-to collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                                       Pricing & Negotiation
                                     </button>
                                   </h5>
                                 </div>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div id="collapseSix" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                                   <div class="card-body">
                                     What's the cost? Specify your last price or click on 'Negotiable' to let buyers know that you're ready to bargain.
                                   </div>

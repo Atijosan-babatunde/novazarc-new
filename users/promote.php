@@ -57,11 +57,11 @@ while ($row = mysqli_fetch_array($qry)) {
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h3 class="m-0">Promote My Ads</h3>
+              <h3 class="m-0" style="font-weight:600;">Promote My Ads</h3>
             </div>
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
-                <li class="breadcrumb-item"><a href="../">Portal Home</a></li>
+                <li class="breadcrumb-item"><a class="px-4 py-2 mt-3" href="../" style="background-color: #dbae5f; color: var(--white); border-radius:3px">Home</a></li>
               </ol>
             </div>
           </div>
@@ -113,7 +113,7 @@ while ($row = mysqli_fetch_array($qry)) {
                       <div class="col-md-12">
                         <div class="row">
                           <div class="col-md-4">
-                            <input type="submit" onClick="Pay()" class="btn btn-primary" value="Pay">
+                            <input type="submit" onClick="Pay()" class="btn px-5 py-2 ft-2 fs-12 fw-600" style="background-color: #dbae5f; color: var(--white);" value="Pay">
                           </div>
                         </div>
                       </div>
@@ -125,12 +125,12 @@ while ($row = mysqli_fetch_array($qry)) {
 
                 <div class="col-md-6 " style="display: none">
                   <form method="post" onSubmit="return false;">
-                    <input type="submit" onClick="Saveall()" value="Pay">
+                    <input type="submit" onClick="Saveall()" class="btn px-5 py-2 ft-2 fs-12 fw-600" style="background-color: #dbae5f; color: var(--white);" value="Pay">
                   </form>
                 </div>
               </div>
               <br> <br>
-              <div class="card-footer"> Ads </div>
+              <!-- <div class="card-footer"> Ads </div> -->
             </div>
       </section>
 
