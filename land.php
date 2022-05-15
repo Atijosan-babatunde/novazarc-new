@@ -81,7 +81,7 @@ include ("cpanel/link.php");
                             <div class="ltn__product-tab-content-inner ltn__product-grid-view">
                                 <div class="row ltn__product-slider-item-three-active slick-arrow-1">
                                         <?php //require ("assets/ftprodt.php");
-                                        $qr = mysqli_query($link, "SELECT * FROM business WHERE cate ='3' ORDER BY promotion");
+                                        $qr = mysqli_query($link, "SELECT * FROM business WHERE cate ='lands' ORDER BY promotion");
                                         $bsn = mysqli_num_rows($qr) > 0;
                                                         
                                         ?>
@@ -152,7 +152,7 @@ include ("cpanel/link.php");
                                  <div class="" style="padding-left: 0px;">
                                     <ul>
                                         <li>
-                                            <a href="product-details?pid=<?php echo $rowb['id'];?>"><i class="fas fa-camera"></i><?php echo $myct; ?></a>
+                                            <a href="./product-details.php?pid=<?php echo $rowb['id'];?>"><i class="fas fa-camera"></i><?php echo $myct; ?></a>
                                         </li>
                                      </ul>
                                 </div>

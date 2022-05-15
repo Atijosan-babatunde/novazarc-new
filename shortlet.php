@@ -83,7 +83,7 @@ include ("cpanel/link.php");
                             <div class="ltn__product-tab-content-inner ltn__product-grid-view">
                                 <div class="row ltn__product-slider-item-three-active slick-arrow-1">
                                         <?php //require ("assets/ftprodt.php");
-                                        $qr = mysqli_query($link, "SELECT * FROM business WHERE cate !='' AND cate ='4' ORDER BY promotion");
+                                        $qr = mysqli_query($link, "SELECT * FROM business WHERE cate !='' AND cate ='shortlet' ORDER BY promotion");
                                         $bsn = mysqli_num_rows($qr) > 0;
                                                         
                                         ?>
@@ -161,7 +161,7 @@ elseif($rowb['ptype'] == 12)
                 <div class="col-md-3">
                     <div class="ltn__product-item ltn__product-item-4 text-center---">
                         <div class="product-img" style="padding-bottom:5px; margin-bottom:5px; max-height:200px; min-height:200px; opacity: 0.5;">
-                            <a href="product-details?pid=<?php echo $rowb['id'];?>"><img src="uploads/<?php echo $rowb['image'];?>"  alt="#"/></a>
+                            <a href="./product-details.php?pid=<?php echo $rowb['id'];?>"><img src="uploads/<?php echo $rowb['image'];?>"  alt="#"/></a>
                             
                             <div class="product-badgel">
 							<ul>
