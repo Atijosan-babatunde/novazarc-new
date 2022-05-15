@@ -36,27 +36,27 @@ include("./cpanel/link.php");
                                     </li>
                                     <li class="menu-icon"><a href="#">Shop</a>
                                         <ul>
-                                            <li><a href="apartment">Apartments</a></li>
-                                            <li><a href="hostel">Hostel</a></li>
-                                            <li><a href="houses">Houses</a></li>
-                                            <li><a href="shortlet">Shortlet</a></li>
-                                            <li><a href="land">Lands</a></li>
-                                            <li><a href="offices">Offices</a></li>
-                                            <li><a href="shop">Shops</a></li>
+                                            <li><a href="./apartment.php">Apartments</a></li>
+                                            <li><a href="./hostel.php">Hostel</a></li>
+                                            <li><a href="./houses.php">Houses</a></li>
+                                            <li><a href="./shortlet.php">Shortlet</a></li>
+                                            <li><a href="./land.php">Lands</a></li>
+                                            <li><a href="./offices.php">Offices</a></li>
+                                            <li><a href="./shop.php">Shops</a></li>
 
                                         </ul>
                                     </li>
                                     <li class="menu-icon"><a href="#">About</a>
                                         <ul>
-                                            <li><a href="about">About</a></li>
-                                            <li><a href="service">Services</a></li>
+                                            <li><a href="./about.php">About</a></li>
+                                            <li><a href="./service.php">Services</a></li>
 
-                                            <li><a href="faq">FAQ</a></li>
+                                            <li><a href="./faq.php">FAQ</a></li>
 
                                         </ul>
                                     </li>
 
-                                    <li><a href="contact">Contact</a></li>
+                                    <li><a href="./contact.php">Contact</a></li>
                                 </ul>
                             </div>
                         </nav>
