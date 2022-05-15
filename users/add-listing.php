@@ -42,15 +42,16 @@ $_SESSION['US_ln'];
 </style>
 
 <style>
-  .btn-to{
-    font-size:20px;
-    font-weight:600;
+  .btn-to {
+    font-size: 20px;
+    font-weight: 600;
 
   }
-  .modal-header{
+
+  .modal-header {
     background-color: #faa603;
-    color:#ffffff;
-    font-weight:600;
+    color: #ffffff;
+    font-weight: 600;
   }
 </style>
 
@@ -786,8 +787,7 @@ $_SESSION['US_ln'];
                 <div class="card-header"> Upload images</div>
 
                 <div class="card-body">
-                  <p>an Ad should have minimum of 5 images.
-                  </p>
+                <p style="font-size:10px; color:red"> Note: Minimum upload of 5 images. </p>
                   <form method='post' id="myformdata" action='' onSubmit="return false;">
                     <div class="row">
 
@@ -803,12 +803,12 @@ $_SESSION['US_ln'];
                         <!--  <br>-->
                         <!--  <input type="submit" onClick="Doneall()" id="btnsave" class="btn btn-primary" value="Done">-->
                         <!--</div>-->
-                        
-                        
+
+
                         <!-- PROMOTION MODAL -->
                         <div class="form-group">
                           <br>
-                          <button type="button" class="btn px-5 py-2 ft-2 fs-12 fw-600" style="background-color: #dbae5f; color: var(--white)" data-toggle="modal" data-target="#myModal2">Done</button>
+                          <button type="button" onClick="validateImage()" class="btn px-5 py-2 ft-2 fs-12 fw-600" style="background-color: #dbae5f; color: var(--white)" data-toggle="modal" data-target="#myModal2" id="done-btn">Done</button>
                         </div>
 
                         <div id="myModal2" class="modal fade" role="dialog">
@@ -839,7 +839,7 @@ $_SESSION['US_ln'];
                       </div>
 
                     </div>
-                  </form> 
+                  </form>
                 </div>
               </div>
 
@@ -927,7 +927,6 @@ $_SESSION['US_ln'];
 
     }
 
-
     function Change_country() {
       var country = document.getElementById("country").value
 
@@ -987,8 +986,6 @@ $_SESSION['US_ln'];
       var purpose = $('#purpose').val();
       var negotiate = $('#negotiate').val();
 
-
-
       if (cate != "" && description != "" && price != "" && address != "" && condition != "" && purpose != "" && negotiate != "") {
 
         document.getElementById("part1").style.display = 'none';
@@ -1021,30 +1018,44 @@ $_SESSION['US_ln'];
       $('#myfiles').change(function() {
         //alert("Ok");
         var fd = new FormData($("#myformdata")[0]);
-        $('#wke').html("<span style='padding:5px;color: green; font-size: 25px;'> Please wait... uploading your image. </span>")
 
-        $.ajax({
-          url: '../assets/image.php',
-          method: 'POST',
-          data: fd,
-          contentType: false,
-          processData: false,
-          success: function(data) {
+        // done button
+        const btn = document.getElementById("done-btn");
 
-            if (data.includes("Network")) {
+        // image length
+        const imageLength = document.getElementById("myfiles").files.length;
+        console.log("FORMDATA LENGTH", imageLength)
+        if (imageLength === 0) {
+          btn.disabled = true;
+          $('#wke').html("<span style='padding:5px;color:#f00'> Image upload required. </span>")
+        } else if (imageLength < 5) {
+          $('#wke').html("<span style='padding:5px;color:#f00'> Image should not be less than 5. </span>")
+        } else {
+          $('#wke').html("<span style='padding:5px;color: green; font-size: 25px;'> Please wait... uploading your image. </span>")
+          $.ajax({
+            url: '../assets/image.php',
+            method: 'POST',
+            data: fd,
+            contentType: false,
+            processData: false,
+            success: function(data) {
 
-              $('#wke').html('Bad network. Image could not be uploaded.');
-            } else if (data.includes("Done")) {
-              $('#wke').html('Image uploaded. You can upload more images');
-              $(this).delay(10).queue(function() {
-                $(this).dequeue();
-              });
-              searchdata();
+              if (data.includes("Network")) {
+
+                $('#wke').html('Bad network. Image could not be uploaded.');
+              } else if (data.includes("Done")) {
+                $('#wke').html('Image uploaded. You can upload more images');
+                $(this).delay(10).queue(function() {
+                  $(this).dequeue();
+                });
+                searchdata();
+              }
+
+
             }
+          });
+        }
 
-
-          }
-        });
       });
 
     });
@@ -1068,6 +1079,18 @@ $_SESSION['US_ln'];
     function Doneall() {
       location.href = "../";
     }
+
+    // function validateImage() {
+
+    //   const imageLength = document.getElementById("myfiles").files.length;
+    //     console.log("FORMDATA LENGTH", imageLength)
+    //     if (imageLength === 0) {
+    //       alert("No images selected")
+    //     } else if (imageLength < 5) {
+    //       alert("images should not be less than 5")
+    //     } else {}
+    // }
+
     function DoneAds() {
       location.href = "../users/ads";
     }
