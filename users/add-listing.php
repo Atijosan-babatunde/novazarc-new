@@ -808,7 +808,7 @@ $_SESSION['US_ln'];
                         <!-- PROMOTION MODAL -->
                         <div class="form-group">
                           <br>
-                          <button type="button" onClick="validateImage()" class="btn px-5 py-2 ft-2 fs-12 fw-600" style="background-color: #dbae5f; color: var(--white)" data-toggle="modal" data-target="#myModal2" id="done-btn">Done</button>
+                          <button type="button" onClick="validateImage()" class="btn px-5 py-2 ft-2 fs-12 fw-600" style="background-color: #dbae5f; color: var(--white)" data-toggle="modal" data-target="#myModal2" id="done-btn" disabled>Done</button>
                         </div>
 
                         <div id="myModal2" class="modal fade" role="dialog">
@@ -1026,11 +1026,11 @@ $_SESSION['US_ln'];
         const imageLength = document.getElementById("myfiles").files.length;
         console.log("FORMDATA LENGTH", imageLength)
         if (imageLength === 0) {
-          btn.disabled = true;
           $('#wke').html("<span style='padding:5px;color:#f00'> Image upload required. </span>")
         } else if (imageLength < 5) {
           $('#wke').html("<span style='padding:5px;color:#f00'> Image should not be less than 5. </span>")
         } else {
+          btn.disabled = false;
           $('#wke').html("<span style='padding:5px;color: green; font-size: 25px;'> Please wait... uploading your image. </span>")
           $.ajax({
             url: '../assets/image.php',
